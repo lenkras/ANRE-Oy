@@ -1,0 +1,113 @@
+/* Override template styles for the language toggle button and mobile Panel*/
+
+/* Match the language button height to other nav items */
+#nav button#lang-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  padding: 0.6em 0.75em;
+  line-height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Optional: hover style to match other menu items */
+#nav button#lang-toggle:hover {
+  background: rgba(188, 202, 206, 0.15);
+  transition: all 0.2s ease-in-out;
+  color: #00bfa5;
+}
+
+/* Only affect mobile panel on smaller screens */
+@media screen and (max-width: 840px) {
+  #navPanel {
+    background: #1c2021;
+    color: #fff;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 0.5em 0.75em;
+  }
+
+  #navPanel nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #navPanel * {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  #navPanel nav > ul > li > a,
+  #navPanel nav > ul > li > button {
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 0.8em 1em;
+    opacity: 0.9;
+  }
+
+  #navPanel nav > ul > li > a:hover,
+  #navPanel nav > ul > li > button:hover {
+    color: #00bfa5;
+  }
+
+  #navPanel nav > ul > li > span {
+    font-weight: 900;
+    display: block;
+    padding: 0.8em 1em;
+    color: inherit;
+  }
+
+  #navPanel nav ul li ul li a {
+    font-weight: 400;
+    padding-left: 1.5em;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  #navPanel nav ul li ul li a:hover {
+    color: #00bfa5;
+  }
+}
+
+#contact-modal {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+  overflow-y: auto;
+}
+
+#contact-modal .modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#contact-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+}
