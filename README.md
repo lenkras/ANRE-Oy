@@ -1,7 +1,6 @@
 # ANRE Company Website
 
-This is the **official company website** for ANRE – Dedicated Remote Teams & IT Consultants. The project was **fully planned and implemented by me** as a solo developer.
-
+This is the **official company website** for ANRE Oy.
 The website is a **single-page responsive site** built with HTML, CSS, and JavaScript, and is deployed live. It includes:
 
 - **Two languages** (FI/EN) with a language toggle.  
